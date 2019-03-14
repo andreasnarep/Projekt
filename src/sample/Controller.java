@@ -27,6 +27,6 @@ public class Controller {
     }
     @FXML
     void tiripilt(){
-        System.out.println("ok");
+        System.out.println("oki");
     }
 }
