@@ -5,14 +5,14 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller.Avaleht">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="">
    <children>
       <TextField alignment="CENTER" layoutX="112.0" layoutY="43.0" prefHeight="106.0" prefWidth="383.0" text="Asjad kokku kähku kähku">
          <font>
             <Font name="System Bold" size="28.0" />
          </font>
       </TextField>
-      <Button layoutX="252.0" layoutY="201.0" mnemonicParsing="false" prefHeight="67.0" prefWidth="114.0" text="Mängima">
+      <Button fx:id="teineLeht" layoutX="252.0" layoutY="201.0" mnemonicParsing="false" onMouseClicked="#MineTeiseleLehele" prefHeight="67.0" prefWidth="114.0" text="Mängima">
          <font>
             <Font name="System Bold" size="19.0" />
          </font>
