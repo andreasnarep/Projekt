@@ -25,22 +25,18 @@
    <children>
       <VBox fx:id="vbox" prefHeight="200.0" prefWidth="100.0">
          <children>
-            <MenuButton mnemonicParsing="false" text="Menüü">
+            <MenuButton fx:id="menüü" mnemonicParsing="false" text="Menüü">
               <items>
-                <MenuItem mnemonicParsing="false" text="Kuidas mängida?" />
+                <MenuItem fx:id="reeglid" mnemonicParsing="false" text="Kuidas mängida?" />
                 <MenuItem fx:id="tühjenda" mnemonicParsing="false" text="Tühjenda" />
-                  <MenuItem mnemonicParsing="false" text="Tagasi avalehele" />
+                  <MenuItem fx:id="tagasiAvalehele" mnemonicParsing="false" onAction="#switchScene" text="Tagasi avalehele" />
               </items>
             </MenuButton>
          </children>
       </VBox>
       <ScrollPane hbarPolicy="NEVER" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowSpan="3">
         <content>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="432.0" prefWidth="135.0">
-               <children>
-                  <ImageView fitHeight="437.0" fitWidth="142.0" layoutX="-5.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true" />
-               </children>
-            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="432.0" prefWidth="144.0" />
         </content>
       </ScrollPane>
       <ImageView fx:id="pilt" fitHeight="150.0" fitWidth="200.0" onDragDetected="#tiripilt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1" />

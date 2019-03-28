@@ -25,11 +25,11 @@
    <children>
       <VBox fx:id="vbox" prefHeight="200.0" prefWidth="100.0">
          <children>
-            <MenuButton mnemonicParsing="false" text="Menüü">
+            <MenuButton fx:id="menüü" mnemonicParsing="false" text="Menüü">
               <items>
-                <MenuItem mnemonicParsing="false" text="Kuidas mängida?" />
+                <MenuItem fx:id="reeglid" mnemonicParsing="false" text="Kuidas mängida?" />
                 <MenuItem fx:id="tühjenda" mnemonicParsing="false" text="Tühjenda" />
-                  <MenuItem mnemonicParsing="false" text="Tagasi avalehele" />
+                  <MenuItem fx:id="tagasiAvalehele" mnemonicParsing="false" onAction="#switchScene" text="Tagasi avalehele" />
               </items>
             </MenuButton>
          </children>
