@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 
-<GridPane fx:id="alus" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="430.0" prefWidth="625.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<GridPane fx:id="alus" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="430.0" prefWidth="625.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerTagasi">
   <columnConstraints>
     <ColumnConstraints hgrow="SOMETIMES" maxWidth="601.0" minWidth="10.0" prefWidth="175.0" />
       <ColumnConstraints hgrow="SOMETIMES" maxWidth="601.0" minWidth="10.0" prefWidth="329.0" />
@@ -28,8 +28,7 @@
             <MenuButton fx:id="menüü" mnemonicParsing="false" text="Menüü">
               <items>
                 <MenuItem fx:id="reeglid" mnemonicParsing="false" text="Kuidas mängida?" />
-                <MenuItem fx:id="tühjenda" mnemonicParsing="false" text="Tühjenda" />
-                  <MenuItem fx:id="tagasiAvalehele" mnemonicParsing="false" onAction="#switchScene" text="Tagasi avalehele" />
+                  <MenuItem fx:id="tagasi" mnemonicParsing="false" onAction="#tagasiAction" text="Tagasi avalehele" />
               </items>
             </MenuButton>
          </children>
